@@ -1,0 +1,11 @@
+[Unit]
+Description=WebFSD
+
+[Service]
+ExecStart=%h/bin/webfsd -r /mnt/superfree/media/cache/local/dl -4 -p 8877 -L /tmp/webfsd.log
+Restart=always
+
+
+[Install]
+WantedBy=default.target
+

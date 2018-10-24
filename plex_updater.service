@@ -1,0 +1,13 @@
+[Unit]
+Description=Plex Updater
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python2 %h/bin/plex_updater.py
+Restart=no
+RemainAfterExit=yes
+
+
+[Install]
+WantedBy=default.target
+

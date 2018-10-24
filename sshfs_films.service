@@ -1,0 +1,10 @@
+[Unit]
+Description=Spiped Daemon
+
+[Service]
+ExecStart=%h/bin/sshfs_service_films.sh
+Restart=always
+
+
+[Install]
+WantedBy=default.target

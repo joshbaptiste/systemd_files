@@ -1,0 +1,10 @@
+[Unit]
+Description=Spiped Daemon
+
+[Service]
+ExecStart=%h/bin/spiped.sh
+Restart=always
+
+
+[Install]
+WantedBy=default.target

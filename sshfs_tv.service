@@ -1,0 +1,10 @@
+[Unit]
+Description=Spiped Daemon
+
+[Service]
+ExecStart=%h/bin/sshfs_service_tv.sh
+Restart=always
+
+
+[Install]
+WantedBy=default.target

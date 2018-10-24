@@ -1,0 +1,10 @@
+[Unit]
+Description=SickChill
+
+[Service]
+ExecStart=/usr/bin/python2 %h/pvr/sickrage/SickBeard.py --nolaunch --config=%h/pvr/conf/SickBeard.config.ini
+Restart=no
+
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=NzbGet
+
+[Service]
+Type=forking
+ExecStart=%h/pvr/nzbget/nzbget --daemon --configfile %h/pvr/conf/nzbget.conf 
+Restart=yes
+RestartSec=10
+
+
+[Install]
+WantedBy=default.target
